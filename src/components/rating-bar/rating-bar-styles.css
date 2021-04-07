@@ -1,6 +1,8 @@
 .rating-bar-container {
     /* font-family: system-ui; */
     padding: 1rem 1rem 1rem 1rem;
+    border: 1px solid black;
+    border-radius: 25px;
 }
 
 .rating-bar-header-text {
@@ -14,6 +16,8 @@
 .rating-bar-container .rating-bar-grid-container{
     display: flex;
     margin-top: .25rem;
+    flex-flow: wrap;
+    justify-content: center;
     gap: .5rem;
 }
 
