@@ -7,7 +7,7 @@ interface RatingBarFlavorTextProps {
 export default function RatingBarFlavorText(props : RatingBarFlavorTextProps) {
     let { ratingValue } = props;
     const flavorText = 
-        ratingValue < 1
+        ratingValue < 1 || ratingValue > 10
         ? "You haven't rated our service yet. Please leave us a feedback!"
         : `You have rated our service ${ratingValue}/10. Thank you for your patronage!`;
     
